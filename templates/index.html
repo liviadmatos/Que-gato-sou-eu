@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Que gato sou eu?</h1>
+
+        <form action="/gato" method="post">
+            <input type="text" name="nome" placeholder="Informe seu nome:">
+            <button type="submit">Localizar o gato</button>
+        </form>
+
+        <hr>
+
+        {% if url_imagem %}
+            <img src="{{ url_imagem }}" class="imagem_gato" />
+            <p class="nome_gato">{{ nome }}, esse gato é você!</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

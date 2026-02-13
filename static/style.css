@@ -1,0 +1,71 @@
+/* Fonte delicada */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ffd6ec, #ffeef8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caixa principal */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+    text-align: center;
+    width: 350px;
+}
+
+/* Título */
+h1 {
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #ffb6d9;
+    outline: none;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+/* Botão */
+button {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff85c1;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff4fa3;
+    transform: scale(1.05);
+}
+
+/* Imagem do gato */
+.imagem_gato {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto do nome */
+.nome_gato {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
